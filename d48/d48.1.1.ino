@@ -110,7 +110,7 @@ void httpRequest() {
   if (client.connect(server, 5001)) {
     Serial.println("connecting...");
     // send the HTTP GET request:
-    client.println("GET /report/room/3/lamp/1/state/on HTTP/1.1");
+    client.println("GET / HTTP/1.1");
     client.println("Host: 192.168.1.54");
     client.println("User-Agent: ArduinoWiFi/1.1");
     client.println("Connection: close");
