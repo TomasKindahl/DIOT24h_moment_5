@@ -181,7 +181,7 @@ void httpRequest(float temperature, float humidity) {
     client.stop();
 
     // if there's a successful connection:
-    if (client.connect(server, 5001)) {
+    if (client.connect(server, 5000)) {
         Serial.println("connecting...");
         // send the HTTP GET request:
         // client.println("GET / HTTP/1.1");
