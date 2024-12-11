@@ -26,15 +26,15 @@ IPAddress server(192,168,1,54);
 
 unsigned long lastConnectionTime = 0;            // last time you connected to the server, in milliseconds
 const unsigned long postingInterval = 10L * 1000L; // delay between updates, in milliseconds
-int lamp_mode = HIGH;
-const int button = 4;
+int lamp_mode = HIGH;  // D48.2.2
+const int button = 4;  // D48.2.2
 
 /* -------------------------------------------------------------------------- */
 void setup() {
 /* -------------------------------------------------------------------------- */
-  pinMode(button, INPUT_PULLUP);
-  pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(LED_BUILTIN, lamp_mode);
+  pinMode(button, INPUT_PULLUP);         // D48.2.2
+  pinMode(LED_BUILTIN, OUTPUT);          // D48.2.2
+  digitalWrite(LED_BUILTIN, lamp_mode);  // D48.2.2
 /* -------------------------------------------------------------------------- */
   //Initialize serial and wait for port to open:
   Serial.begin(9600);
@@ -102,7 +102,7 @@ void loop() {
     httpRequest();
   }
   // detect button state:
-  if(digitalRead(button) == LOW) {
+  if(digitalRead(button) == LOW) {  // D48.2.2:
     if(lamp_mode == HIGH)
       lamp_mode = LOW;
     else
@@ -121,7 +121,7 @@ void httpRequest() {
   client.stop();
 
   // if there's a successful connection:
-  if (client.connect(server, 5001)) {
+  if (client.connect(server, 5000)) {
     Serial.println("connecting...");
     // send the HTTP GET request:
     if(lamp_mode == HIGH)
