@@ -6,3 +6,9 @@ Plus egna modifieringar.
 
 - [Linux-versionen](mosquitto-linux/mosquitto.md)
 - [Cygwin-versionen](mosquitto-cygwin/mosquitto.md)
+
+Hur man kan gå vidare:
+
+1. kolla länken [Arguments to main in C [duplicate]](https://stackoverflow.com/questions/4176326/arguments-to-main-in-c)
+2. skriv om publish så att du kan ge host som argument 1 och on eller off på argument 2
+3. skriv om client sammalunda
