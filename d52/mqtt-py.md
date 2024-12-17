@@ -1,4 +1,4 @@
-# MQTT på Python
+# MQTT i Python
 
 Om man vill lägga till MQTT-stöd i Python, exvis
 vid sidan av en Flask-server, så finns möjligheten
