@@ -2,7 +2,7 @@
 
 ## CoAP
 
-I fallet med CoAP är det svårt att hitta ett
+I fallet med CoAP ([lab d43](http://moodle.molk.se/mod/page/view.php?id=6972)) är det svårt att hitta ett
 Python-bibliotek för CoAP (om du är djärv kan du testa
 [CoAPthon](https://github.com/Tanganelli/CoAPthon)),
 en enklare lösning är att anropa ett program från
