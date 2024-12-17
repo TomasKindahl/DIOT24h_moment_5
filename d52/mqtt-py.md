@@ -1,4 +1,4 @@
-# MQTT i Python
+# MQTT-klient i Python
 
 Om man vill lägga till MQTT-stöd i Python, exvis
 vid sidan av en Flask-server, så finns möjligheten
@@ -12,9 +12,19 @@ Om du kör utan så installerar du med
 ```
 pip install paho-mqtt
 ```
+Om du dock kör `venv`  på Windows, så byter du
+raden:
+```
+source paho-mqtt/bin/activate
+```
+mot
+```
+source paho-mqtt/Source/activate
+```
 och fortsätter följa instruktionerna fram till
-programmet under **Getting Started**. I vår miljö
-kör man i stället [mqtt-py.py](mqtt-py.py).
+programmet under **Getting Started**. I vår
+miljö kör man i stället [mqtt-py.py](mqtt-py.py).
 
 Dokumentation:
 [Eclipse paho-mqtt, client module](https://eclipse.dev/paho/files/paho.mqtt.python/html/client.html)
+
