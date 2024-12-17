@@ -1,3 +1,4 @@
 # Diverse moduler
 
-[MQTT i Python](mqtt-py.md)
+- [MQTT-klient i Python](mqtt-py.md)
+- [subprocess i Python](subproc.md)
